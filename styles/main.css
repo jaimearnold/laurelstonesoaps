@@ -1,0 +1,86 @@
+/* Jaime Arnold
+    01/26/2022
+    CS 125H - Lab 3 */
+
+
+/* the styles for the elements */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+
+/* the styles for the header */
+
+header img {
+    float: left;
+    border: ridge;
+}
+
+header h1 {
+    font-size: 190%;
+    color: #7f4899;
+    text-indent: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+
+header h2 {
+    font-size: 130%;
+    font-style: italic;
+    text-indent: 2em;
+}
+
+
+/* the styles for the section */
+
+main {
+    clear: left;
+}
+
+main h1 {
+    font-size: 150%;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 130%;
+}
+
+main h3 {
+    font-size: 105%;
+}
+
+main a:link {
+    color: #7f4899;
+    font-weight: bold;
+}
+
+main a:focus,
+main a:hover {
+    font-style: italic;
+}
+
+main p.indent {
+    text-indent: 2em;
+}
+
+ul {
+    line-height: 1.5;
+}
+
+li {
+    font-size: 100%;
+}
+
+main p.center {
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* the styles for the footer */
+
+footer p {
+    text-align: center;
+}
