@@ -5,10 +5,6 @@
 
 /* the styles for the elements */
 
-html {
-    background-color: rgb(241, 237, 239);
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +12,6 @@ html {
 }
 
 body {
-    background-color: lavender;
     height: 80%;
     font-size: 100%;
     margin-left: auto;
@@ -30,7 +25,7 @@ header {
     text-align: center;
     width: 100%;
     height: auto;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
