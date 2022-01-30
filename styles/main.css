@@ -5,32 +5,14 @@
 
 /* the styles for the elements */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 80%;
-    font-size: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1em;
-    padding: 1em;
-}
-
 header {
-    background-image: url("/images/aurelia-dubois-6J0MUsmS4fQ-unsplash.png");
+    background-image: url("../images/photo-1600857544200-b2f666a9a2ec\ copy.jpg");
     background-repeat: no-repeat;
-    text-align: center;
-    width: 100%;
-    height: auto;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    border-radius: 0 0 85% 85% / 30%;
+    width: 100%;
 }
 
 header .overlay {
@@ -47,68 +29,89 @@ header .overlay {
 
 header h1 {
     font-family: "Dancing Script", cursive;
+    text-align: center;
     font-size: 80px;
     color: white;
-    text-indent: 50px;
     text-shadow: 2px 2px 2px black;
 }
 
 header h2 {
-    font-size: 130%;
+    font-size: 120%;
     font-style: italic;
-    text-indent: 2em;
+    text-align: center;
 }
 
 
 /* the styles for the section */
 
 main {
-    clear: left;
+    background-color: white;
 }
 
-main h1 {
-    font-size: 150%;
+
+}
+#menu-outer {
+    height: 84px;
+    width: 100%;
+}
+.table {
+    display: table;
+    /* Allow the centering to work */
+    
+    margin: 0 auto;
+}
+ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+    font-weight: bold;
     text-align: center;
 }
-
+ul#horizontal-list li {
+    display: inline;
+}
+.links-list a {
+    background-color: rgb(112, 123, 230);
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    width: 100%;
+}
+main h1 {
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+}
 main h2 {
     font-size: 130%;
 }
-
 main h3 {
     font-size: 105%;
 }
-
-main a:link {
-    color: #6929b3;
-    font-weight: bold;
+h2 a:link {
+    color: #7f758b;
 }
-
-main a:focus,
-main a:hover {
+h2 a:focus,
+h2 a:hover {
     font-style: italic;
 }
-
 main p.indent {
-    text-indent: 2em;
+    text-align: 2em;
 }
-
-ul {
-    line-height: 1.5;
+h2 li {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-li {
+h2 li a {
+    color: darkgreen;
     font-size: 100%;
+    text-align: left;
 }
-
 main p.center {
-    text-align: center;
     font-style: italic;
 }
-
 
 /* the styles for the footer */
-
 footer p {
     text-align: center;
 }
