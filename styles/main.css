@@ -5,40 +5,78 @@
 
 /* the styles for the elements */
 
-header {
-    background-image: url("../images/photo-1600857544200-b2f666a9a2ec\ copy.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+body {
+    width: 1300px;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px double plum;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 10px plum;
 }
 
-header .overlay {
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    color: #fff;
-    text-shadow: 1px 1px 1px #333;
-    background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+* {
+    margin: 0;
+    padding: 0;
 }
 
 
 /* the styles for the header */
 
+header {
+    background-image: url("../images/photo-1600857544200-b2f666a9a2ec\ copy.jpg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 2px solid purple;
+    padding: 0em 0em;
+    margin: 0em auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 3px plum;
+}
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 3em 0em;
+    margin: 0em 0em;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+
 header h1 {
     font-family: "Dancing Script", cursive;
     text-align: center;
-    font-size: 80px;
+    font-size: 600%;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 3px 1px black;
+    width: 100%;
+    padding-bottom: .25em;
+    margin: 0 auto;
 }
 
 header h2 {
-    font-size: 120%;
+    font-size: 130%;
     font-style: italic;
     text-align: center;
+    padding-top: .3em;
+    margin: auto;
+}
+
+blockquote {
+    padding-top: .5em;
+    padding-bottom: .25;
+    margin: auto;
 }
 
 
@@ -46,72 +84,87 @@ header h2 {
 
 main {
     background-color: white;
+    padding: 20px 20px;
+    margin-top: .25em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-
+p {
+    padding-bottom: .5em;
 }
-#menu-outer {
+
+main #menu-outer {
     height: 84px;
-    width: 100%;
 }
-.table {
+
+main .table {
     display: table;
     /* Allow the centering to work */
-    
     margin: 0 auto;
 }
-ul#horizontal-list {
+
+main ul#horizontal-list {
     min-width: 696px;
     list-style: none;
-    padding-top: 20px;
     font-weight: bold;
+    font-size: 140%;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-ul#horizontal-list li {
+
+main ul#horizontal-list li {
     display: inline;
 }
-.links-list a {
+
+main .links-list a {
     background-color: rgb(112, 123, 230);
     color: #fff;
     text-decoration: none;
-    padding: 1em 2em;
-    width: 100%;
+    border: 2px solid purple;
+    padding: .5em 4.2em;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 2px plum;
 }
+
 main h1 {
-    font-weight: bold;
-    font-size: 100%;
-    text-align: center;
-}
-main h2 {
+    font-weight: bolder;
     font-size: 130%;
-}
-main h3 {
-    font-size: 105%;
-}
-h2 a:link {
-    color: #7f758b;
-}
-h2 a:focus,
-h2 a:hover {
-    font-style: italic;
-}
-main p.indent {
-    text-align: 2em;
-}
-h2 li {
     text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    color: purple;
 }
-h2 li a {
-    color: darkgreen;
-    font-size: 100%;
-    text-align: left;
-}
-main p.center {
+
+main h1 a:link {
     font-style: italic;
 }
 
+main h1 a:focus,
+main h1 a:hover {
+    font-style: italic;
+}
+
+main ul {
+    list-style: none;
+}
+
+main h1 li {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: .25em;
+    padding-left: 2em;
+}
+
+main h1 li a {
+    font-size: 100%;
+    text-align: left;
+    font-style: italic;
+}
+
+
 /* the styles for the footer */
+
 footer p {
     text-align: center;
 }
