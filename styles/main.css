@@ -14,9 +14,8 @@ body {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    border: 5px double plum;
+    border: 5px solid plum;
     border-radius: 15px;
-    box-shadow: 4px 4px 10px 10px plum;
 }
 
 * {
@@ -36,7 +35,7 @@ header {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    border: 2px solid purple;
+    border: 2px solid plum;
     padding: 0em 0em;
     margin: 0em auto;
     text-align: center;
@@ -91,6 +90,7 @@ main {
 
 p {
     padding-bottom: .5em;
+    padding-left: 1em;
 }
 
 main #menu-outer {
@@ -117,11 +117,11 @@ main ul#horizontal-list li {
 }
 
 main .links-list a {
-    background-color: rgb(112, 123, 230);
+    background-color: plum;
     color: #fff;
     text-decoration: none;
-    border: 2px solid purple;
-    padding: .3em 4.2em;
+    border: 2px solid;
+    padding: .3em 4em;
     border-radius: 8px;
     box-shadow: 1px 1px 2px 2px plum;
 }
@@ -132,7 +132,7 @@ main h1 {
     text-align: left;
     padding-top: .3em;
     padding-bottom: .3em;
-    color: purple;
+    color: plum;
 }
 
 main h1 a:link {
@@ -146,19 +146,30 @@ main h1 a:hover {
 
 main ul {
     list-style: none;
+    padding-left: 1em;
+    padding-bottom: .25em;
 }
 
 main h1 link {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: .25em;
-    padding-left: 2em;
+    padding-bottom: .2em;
+    padding-top: .3em;
 }
 
 main h1 li a {
     font-size: 100%;
     text-align: left;
     font-style: italic;
+    padding-bottom: .35em;
+}
+
+main h2 {
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: 0em;
+    font-size: 100%;
+    font-weight: normal;
 }
 
 
@@ -167,13 +178,14 @@ main h1 li a {
 footer p {
     text-align: center;
     color: white;
-    background-color: rgb(112, 123, 230);
+    background-color: plum;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid purple;
+    border: 2px solid plum;
     border-radius: 4px;
     padding-top: .25em;
     padding-bottom: .25em;
+    border-radius: 8px;
 }
