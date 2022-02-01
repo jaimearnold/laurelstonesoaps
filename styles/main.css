@@ -133,6 +133,7 @@ main h1 {
     padding-top: .3em;
     padding-bottom: .3em;
     color: plum;
+    text-shadow: 1px 1px 1px black;
 }
 
 main h1 a:link {
@@ -187,5 +188,4 @@ footer p {
     border-radius: 4px;
     padding-top: .25em;
     padding-bottom: .25em;
-    border-radius: 8px;
 }
