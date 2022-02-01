@@ -18,8 +18,6 @@ body {
     margin-bottom: .3;
     margin-left: auto;
     margin-right: auto;
-    border: 4px solid plum;
-    border-radius: 15px;
 }
 
 * {
@@ -89,6 +87,7 @@ main {
     margin-top: .1em;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 15px;
 }
 
 p {
