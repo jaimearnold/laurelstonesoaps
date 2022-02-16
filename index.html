@@ -1,85 +1,73 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Laurel Stone Soaps</title>
-    <link rel="shortcut icon" href="images/logo.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--
-        Jaime Arnold
-        01/18/2022
-        CS 125H - Lab 2
-    -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="normalize.css" href="styles/normalize.css" />
+    <title>Laurelstone Soaps</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="styles/laurel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="font" href="fonts/Montserrat-VariableFont_wght.ttf">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 </head>
 
 <body>
-    <header>
-        <div class="overlay">
-
-            <h1>Laurelstone Soaps</h1>
-            <blockquote>
-                <h2>~Our goal is to make your skin feel Happy,</h2>
-                <h2>Like Sunshine in the Rain!~</h2>
-            </blockquote>
 
 
-        </div>
-    </header>
-    <main>
-
-        <div id="menu-outer">
-            <div class="table">
-                <ul id="horizontal-list" class="links-list">
-                    <li><a href="# ">Home</a></li>
-                    <li><a href="soaps/goats_milk.html ">Goats Milk</a></li>
-                    <li><a href="soaps/vegetable_oil.html ">Vegetable Oils</a></li>
-                    <li><a href="about/about_us.html">About</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <h1>Laurelstone Soaps</h1>
-        <p>
-            Uplift the mood and conjure up images of the beautiful plants and flowers in nature Nothing, can compare with holding one of these beautiful, handcrafted soaps in your hand. The creamy goodness of each one springs to life beneath running water, & is like
-            receiving a skin softening gift from Mother Nature herself.
-        </p>
-        <p>
-            Our soaps contain a luscious blend of ingredients discovered, tried and tested during a lifelong love affair with the age old, natural process of soap making. More and more people, burdened by the stress of life and a desire to connect with Nature, are
-            seeking unprocessed, sustainable products. They want a product which made with love, and the expertise of one who has passion for their craft. Working toward that end since 1986, our ingredients have been carefully selected and lovingly designed..
-        </p>
-        <h1>They include:</h1>
+    <nav id="nav_menu">
         <ul>
+
+            <li><a href="soaps/goats_milk.html">GoatsMilk</a></li>
+            <li><a href="soaps/vegetable_oil.html">VegOils</a></li>
             <li>
-                <a href="soaps/goats_milk.html "> Goats Milk </a>, hailed for centuries as a beauty treatment to rejuvenate and soften skin.
+                <a href="#" class="current"><img src="images/logo11.png" alt="Laurelston Logo" title="Home Page"></a>
             </li>
-            <li>
-                Rich creamy butters such as Mango Butter, Avocado Butter, & Shea Butter.
-            </li>
-            <li>
-                <a href="soaps/vegetable_oil.html "> Vegetable Oils</a> such as Sweet Almond Oil, Vitamin E, Essential Oils, as well as fragrance oils in others, just because they are fun!
-            </li>
+            <li><a href="about/about_us.html">About</a></li>
+            <li><a href="#" target="_blank">Cart</a></li>
+
         </ul>
-        <h2>
-            <p>
-                Some bars are all natural including color & fragrance and the rest are almost all natural (natural except color &/or fragrance).
-            </p>
-        </h2>
+    </nav>
+
+
+    <main>
+        <div class="container1">
+            <img src="images/soap/soap1visual-stories-micheile-lbSs0K2npbg-unsplash.png" alt="Responsive image" class="img-fluid1">
+            <div class="desc">Goats Milk, hailed for centuries as a beauty treatment to rejuvenate and soften skin.</div>
+
+        </div>
+        <div class="container1">
+            <img src="images/soap/soap3sincerely-media-8OU9G0Q53Cg-unsplash.png" class="img-fluid2" alt="Responsive image">
+            <div class="desc">Rich creamy butters such as Mango Butter, Avocado Butter, & Shea Butter.</div>
+        </div>
+        <div class="container1">
+            <img src="images/soap/soap2visual-stories-micheile-auKN3JcMKso-unsplash.png" class="img-fluid3" alt="Responsive image">
+            <div class="desc">Such as Sweet Almond Oil, Vitamin E, Essential Oils, as well as fragrance oils in others.</div>
+        </div>
+        <div class="clearfix"></div>
     </main>
 
-    <footer>
-        <p>
-            <small>
-          &copy; Copyright 2022 Laurelstone Soaps Oregon City, Oregon
-          97045</small
-        >
-      </p>
-    </footer>
-    </body>
+
+
+    <div class="row">
+        <footer>
+            <p>
+                <small>
+						&copy;Copyright 2022 Laurelstone Soaps Oregon City, Oregon 97045
+						</small>
+
+            </p>
+        </footer>
+    </div>
+
+
+</body>
+
 </html>
