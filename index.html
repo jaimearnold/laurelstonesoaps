@@ -1,73 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<!--
+    
+Jaime Arnold
+CS 125H
+03/09/2022
+
+-->
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Laurelstone Soaps</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="styles/laurel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="font" href="fonts/Montserrat-VariableFont_wght.ttf">
-
+    <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="stylesheet" href="styles/slicknav.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo: "#mobile_menu"
+            });
+        });
+    </script>
 
 </head>
 
+
+
 <body>
-
-
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
 
-            <li><a href="soaps/goats_milk.html">GoatsMilk</a></li>
-            <li><a href="soaps/vegetable_oil.html">VegOils</a></li>
             <li>
-                <a href="#" class="current"><img src="images/logo11.png" alt="Laurelston Logo" title="Home Page"></a>
+                <a href="#" id="logo"><img src="images/Layer 2.png" alt="Image of logo" width="250" height="200"></a>
             </li>
-            <li><a href="about/about_us.html">About</a></li>
-            <li><a href="#" target="_blank">Cart</a></li>
 
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="soap.html">SOAPS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="cart.html">CART</a></li>
         </ul>
     </nav>
 
 
-    <main>
-        <div class="container1">
-            <img src="images/soap/soap1visual-stories-micheile-lbSs0K2npbg-unsplash.png" alt="Responsive image" class="img-fluid1">
-            <div class="desc">Goats Milk, hailed for centuries as a beauty treatment to rejuvenate and soften skin.</div>
+    <div>
+        <header class="soap_header">
+            <h1>Laurelstone Soaps</h1>
+        </header>
+    </div>
+
+
+
+    <div class="images">
+        <div class="rightimg">
+            <a href="soap.html"><img src="images/natallia-leanovich-anVxATssuZk-unsplash.jpeg" width="100%" height="400" alt="Image of soap product"></a>
 
         </div>
-        <div class="container1">
-            <img src="images/soap/soap3sincerely-media-8OU9G0Q53Cg-unsplash.png" class="img-fluid2" alt="Responsive image">
-            <div class="desc">Rich creamy butters such as Mango Butter, Avocado Butter, & Shea Butter.</div>
+
+
+
+        <div class="centerimg">
+
+            <a href="soap.html"><img src="images/sincerely-media-7gZW8ZX6BqY-unsplash.jpeg" width="100%" height="400" alt="Image of soap product"></a>
+
         </div>
-        <div class="container1">
-            <img src="images/soap/soap2visual-stories-micheile-auKN3JcMKso-unsplash.png" class="img-fluid3" alt="Responsive image">
-            <div class="desc">Such as Sweet Almond Oil, Vitamin E, Essential Oils, as well as fragrance oils in others.</div>
+
+
+        <div class="leftimg">
+            <a href="about.html"><img src="images/sincerely-media-f8hdkJz-m5w-unsplash.jpeg" width="100%" height="400" alt="Image of soap product"></a>
         </div>
-        <div class="clearfix"></div>
-    </main>
+    </div>
+    <div class="clearfix"></div>
 
 
 
-    <div class="row">
-        <footer>
-            <p>
-                <small>
-						&copy;Copyright 2022 Laurelstone Soaps Oregon City, Oregon 97045
-						</small>
 
-            </p>
-        </footer>
+
+
+    <div>
+        <header class="soap_header">
+            <h1>The Process</h1>
+        </header>
+    </div>
+    <div class="instructions">
+        <section class="list">
+            <h1>The Process:</h1>
+            <ol>
+                <li>Protect your work area with newspaper, put on your protective gear, and measure your water and lye.</li>
+                <li>Combine the coconut oil and palm oil, and place them in a preheated pot until they melt. You can use different types of oils; however, remember that for this step, the two oils you choose must be solids.</li>
+
+                <li>While the oil is melting, pour water into a bowl, and then slowly pour the lye in the water. Don’t forget, there will be some fumes and heat! Stir the mixture for about five minutes to ensure that it is mixed well.</li>
+                <li>Now it’s time to add your liquid form oil. Measure your olive oil and then add it to the melted solid oils. You want the temperature to be about 110–120 degrees F.</li>
+                <li>Once both the lye mixture and oil mixture reach about 110–120 degrees, pour the lye mixture into the pot with the oil mixture. Blend with a hand blender for a full five minutes.</li>
+                <li>Add about a teaspoon of the essential oils of your choice. You can also add colorant and/or herbs if you’d like.</li>
+                <li>Carefully pour your mixture into your mold.</li>
+                <li> Cover your mold with plastic wrap, and then put a towel over it to keep the heat in.</li>
+
+            </ol>
+        </section>
+        <div>
+            <img src="images/rehina-sultanova-Ehaf1PrNr74-unsplash.jpeg" style="width:100%" alt="image of soaps">
+        </div>
+        <div>
+            <img src="images/eugene-chow-hGIffav3cK0-unsplash.jpeg" style="width:100%" alt="image of soaps">
+        </div>
+    </div>
+
+    <div class="fix_com">
+        <a href="https://www.fix.com/blog/soap-making-basics/"><img src="https://www.fix.com/assets/content/15618/soap-making-basics-embed-large.png" style="width: 100%;"></a>
     </div>
 
 
 </body>
+<div class="clearfix"></div>
+
+<footer>
+
+    <p>
+
+        &copy;Copyright 2022 Laurelstone Soaps Oregon City, Oregon 97045
+
+
+    </p>
+
+    <div class="contact_social">
+
+        <a href="http://www.facebook.com"><img class="social_media_img" src="images/facebook.png" alt="facebook_logo"></a>
+        <a href="http://www.instagram.com"><img class="social_media_img" src="images/instagram (1).png" alt="instagram_logo"></a>
+        <a href="http://www.youtube.com"><img class="social_media_img" src="images/youtube (1).png" alt="youtube_logo"></a>
+        <a href="http://www.twitter.com"><img class="social_media_img" src="images/twitter.png" alt="twitter_logo"></a>
+    </div>
+</footer>
 
 </html>
