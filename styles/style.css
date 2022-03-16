@@ -372,6 +372,7 @@ aside.artical {
     flex-direction: column;
     flex-basis: 50%;
     margin: 0 auto;
+    width: 50%;
 }
 
 aside.artical h1 {
@@ -392,6 +393,7 @@ fieldset {
     padding: .5em 1%;
     color: whitesmoke;
     font-size: larger;
+    width: 50%;
 }
 
 #registration_form {
@@ -514,6 +516,7 @@ aside.about {
     padding-top: .5em;
     padding-left: 1%;
     order: 1;
+    width: 50%;
 }
 
 aside.about h1 {
@@ -539,6 +542,7 @@ section.about {
     color: darkslategray;
     padding: 30px;
     justify-content: center;
+    width: 50%;
 }
 
 section.about h1 {
