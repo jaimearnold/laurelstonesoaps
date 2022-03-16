@@ -169,49 +169,59 @@ main {
 
 /* The Process section/aside on index.html page*/
 
-section {
-    display: flex;
-    flex-basis: 40%;
-    justify-content: space-between;
-    order: 2;
+section#fixit {
+    flex-basis: 50%;
     flex-direction: column;
     margin: 0 auto;
+    justify-content: space-around;
+    float: left;
+    width: 50%;
+    order: 2;
 }
 
-section img {
+section#fixit img {
+    flex-basis: 50%;
     padding: 6%;
     padding-bottom: 1.2%;
 }
 
-aside {
-    display: flex;
-    flex-basis: 60%;
-    order: 1;
+aside#process {
+    flex-basis: 50%;
     flex-direction: column;
     padding: 1%;
-    justify-content: space-around;
     margin: 0 auto;
+    justify-content: space-around;
+    float: left;
+    width: 50%;
+    order: 1;
 }
 
-aside img {
+aside#process img {
+    flex-direction: column;
+    flex-basis: 50%;
     padding: 1%;
 }
 
-aside ol li {
-    width: 100%;
+aside#process ol {
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-basis: 50%;
     margin-top: 1em;
     padding: 2%;
     color: darkslategray;
     text-align: left;
 }
 
-aside li {
-    display: block;
+aside#process li {
+    flex-basis: 20%;
     font-weight: bold;
     font-size: x-large;
+    padding: 2%;
 }
 
-aside h1 {
+aside#process h1 {
+    flex-direction: column;
     padding: .5%;
     text-align: center;
     font-weight: bold;
@@ -615,8 +625,16 @@ section#contact {
         text-align: center;
         margin: 0 auto;
     }
-    /* mobile land to tab portrait */
+    aside {
+        order: 1;
+    }
+    section {
+        order: 2;
+    }
 }
+
+
+/* mobile land to tab portrait */
 
 @media only screen and (max-width: 767px) {
     #nav_menu {
@@ -646,6 +664,17 @@ section#contact {
     content {
         flex-direction: column;
     }
+    section,
+    aside {
+        float: none;
+        width: 95%;
+    }
+    aside {
+        order: 1;
+    }
+    section {
+        order: 2;
+    }
 }
 
 @media only screen and (max-width: 479px) {
@@ -659,5 +688,12 @@ section#contact {
     }
     header.soap_header h1 {
         font-size: 250%;
+        text-align: center;
+    }
+    aside {
+        order: 1;
+    }
+    section {
+        order: 2;
     }
 }
