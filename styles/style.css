@@ -524,11 +524,12 @@ aside.about {
     float: left;
 }
 
-aside.about h1 {
+aside.about h2 {
     color: whitesmoke;
     font-size: 250%;
     padding-top: .3em;
     padding-bottom: .3em;
+    text-align: center;
 }
 
 aside.about p {
@@ -557,6 +558,7 @@ section.about h1 {
     padding-bottom: .3em;
     text-align: center;
     padding-top: 1em;
+    align-content: center;
 }
 
 section.about p {
