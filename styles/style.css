@@ -570,7 +570,8 @@ aside.contact_img {
     flex-basis: 40%;
     padding: 4%;
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
+    float: left;
 }
 
 section#contact {
@@ -579,7 +580,8 @@ section#contact {
     flex-basis: 60%;
     justify-content: space-around;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
+    float: left;
 }
 
 
