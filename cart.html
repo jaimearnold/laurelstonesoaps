@@ -29,8 +29,8 @@
     <nav id="nav_menu">
         <ul>
 
-            <li>
-                <a href="index.html" id="logo"><img src="images/Layer 2.png" alt="Image of logo" width="250" height="200"></a>
+            <li id="logo">
+                <a href="index.html"><img src="images/Layer2.png" alt="Image of logo" width="250" height="200"></a>
             </li>
 
             <li><a href="about.html">ABOUT</a></li>
@@ -39,35 +39,35 @@
             <li><a href="cart.html" class="current">CART</a></li>
         </ul>
     </nav>
-    <div>
-        <header class="soap_header">
-            <h1>Shopping Cart</h1>
-        </header>
-    </div>
-    <div>
-        <section>
-            <h1 id="soap">Soap Order Form</h1>
-            <form action="register_account.html" method="get" id="registration_form">
-                <fieldset>
-                    <legend>Customer Information</legend>
-                    <label for="email">E-Mail:</label>
-                    <input type="email" name="email" id="email " autofocus required><br>
-                    <label for="first_name">First Name:</label>
-                    <input type="text" name="first_name" id="first_name" required><br>
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" name="last_name" id="last_name" required><br>
-                    <label for="state">State:</label>
-                    <input type="text" name="state" id="state" required maxlength="2" placeholder="2-character code"><br>
-                    <label for="zip">ZIP Code:</label>
-                    <input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
 
-                </fieldset>
-                <fieldset>
-                    <legend>Ordering Information</legend>
-                    <label for="order_type">Order Type:</label>
-                    <select name="order_type" id="order_type">
+    <header class="soap_header">
+        <h1>Shopping Cart</h1>
+    </header>
+
+
+    <section class="cart">
+        <h1 id="soap">Soap Order Form</h1>
+        <form action="register_account.html" method="get" id="registration_form">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" required maxlength="2" placeholder="2-character code"><br>
+                <label for="zip">ZIP Code:</label>
+                <input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Ordering Information</legend>
+                <label for="order_type">Order Type:</label>
+                <select name="order_type" id="order_type">
                             <option value="l">Lavender</option>
                             <option value="b">Bay Rum</option>            
                             <option value="g">Gardenia</option>
@@ -78,29 +78,29 @@
                             <option value="o">Oregon Rain</option>
                             <option value="u">Unscented</option>
                         </select><br>
-                    <label for="tickets_number">Number of Soaps:</label>
-                    <input type="text" name="tickets_number" id="tickets_number" placeholder="Number of Soaps"><br>
+                <label for="tickets_number">Number of Soaps:</label>
+                <input type="text" name="tickets_number" id="tickets_number" placeholder="Number of Soaps"><br>
 
-                </fieldset>
-                <fieldset id="radio">
-                    <legend>Payment Method</legend>
-                    <input type="radio" name="payment_type" id="debit" value="debit">
-                    <label for="debit">Debit Card</label>
-                    <input type="radio" name="payment_type" id="credit" value="credit">
-                    <label for="credit">Credit Card</label>
-                </fieldset>
-                <fieldset>
-                    <legend>Credit Card Information</legend>
-                    <label for="card_type">Card Type:</label>
-                    <select name="card_type" id="card_type">
+            </fieldset>
+            <fieldset id="radio">
+                <legend>Payment Method</legend>
+                <input type="radio" name="payment_type" id="debit" value="debit">
+                <label for="debit">Debit Card</label>
+                <input type="radio" name="payment_type" id="credit" value="credit">
+                <label for="credit">Credit Card</label>
+            </fieldset>
+            <fieldset>
+                <legend>Credit Card Information</legend>
+                <label for="card_type">Card Type:</label>
+                <select name="card_type" id="card_type">
                             <option value="v">Visa</option>
                             <option value="m">MasterCard</option>            
                             <option value="d">Discovery</option>
                         </select><br>
-                    <label for="card_number">Card Number:</label>
-                    <input type="text" name="card_number" id="card_number" required pattern="\d{16}" placeholder="16 digits" title="Must be 16 digits"><br>
-                    <label for="exp_month">Expiration date:</label>
-                    <select name="exp_month" id="exp_month">
+                <label for="card_number">Card Number:</label>
+                <input type="text" name="card_number" id="card_number" required pattern="\d{16}" placeholder="16 digits" title="Must be 16 digits"><br>
+                <label for="exp_month">Expiration date:</label>
+                <select name="exp_month" id="exp_month">
                             <option value="1">January</option>
                             <option value="2">February</option>
                             <option value="3">March</option>
@@ -114,39 +114,36 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                             </select>
-                    <select name="exp_year" id="exp_year">
+                <select name="exp_year" id="exp_year">
                             <option value="2017">2017</option>
                             <option value="2018">2018</option>
                             <option value="2019">2019</option>
                             <option value="2020">2020</option>
                             <option value="2021">2021</option>
                             </select><br>
-                </fieldset>
-                <fieldset id="buttons">
-                    <legend>Submit Your Order</legend>
-                    <label>&nbsp;</label>
-                    <input type="submit" id="submit" value="Submit">
-                    <input type="reset" id="reset" value="Reset Fields"><br>
-                </fieldset>
-            </form>
+            </fieldset>
+            <fieldset id="buttons">
+                <legend>Submit Your Order</legend>
+                <label>&nbsp;</label>
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" id="reset" value="Reset Fields"><br>
+            </fieldset>
+        </form>
 
 
-        </section>
-    </div>
-    <div class="artical">
-        <aside>
+    </section>
 
-            <h1>Shipping Policy</h1>
-            <p>
-                Getting orders shipped is our top priority! Our products are made to order, so we require anywhere from 1 to 7 business days to complete and ship your order. Some items require a longer “curing/hardening” time and those items have a specific notation.
-            </p>
-            <p>
-                We ship orders using either USPS or UPS, based upon the requirements of each service, as well as the actual timeframe each service provides. When your order is shipped, our website store automatically generates an email with the applicable tracking #
-                of your shipment. Once a package is shipped, and you receive your tracking email, questions regarding delays in shipment or delivery tracking, should be directed to the applicable shipping service.
-            </p>
-        </aside>
-    </div>
-    <div>
+
+    <aside class="artical">
+
+        <h1>Shipping Policy</h1>
+        <p>
+            Getting orders shipped is our top priority! Our products are made to order, so we require anywhere from 1 to 7 business days to complete and ship your order. Some items require a longer “curing/hardening” time and those items have a specific notation.
+        </p>
+        <p>
+            We ship orders using either USPS or UPS, based upon the requirements of each service, as well as the actual timeframe each service provides. When your order is shipped, our website store automatically generates an email with the applicable tracking #
+            of your shipment. Once a package is shipped, and you receive your tracking email, questions regarding delays in shipment or delivery tracking, should be directed to the applicable shipping service.
+        </p>
 
         <figure>
             <figcaption>
@@ -200,27 +197,29 @@
 
             </table>
         </figure>
-        <div class="clearfix"></div>
-    </div>
+    </aside>
+    <div class="clearfix"></div>
 
 
 
+
+
+    <footer>
+        <p>
+
+            &copy;Copyright 2022 Laurelstone Soaps Oregon City, Oregon 97045
+
+
+        </p>
+        <div class="contact_social">
+
+            <a href="http://www.facebook.com"><img class="social_media_img" src="images/facebook.png" alt="facebook_logo"></a>
+            <a href="http://www.instagram.com"><img class="social_media_img" src="images/instagram(1).png" alt="instagram_logo"></a>
+            <a href="http://www.youtube.com"><img class="social_media_img" src="images/youtube(1).png" alt="youtube_logo"></a>
+            <a href="http://www.twitter.com"><img class="social_media_img" src="images/twitter.png" alt="twitter_logo"></a>
+        </div>
+
+    </footer>
 </body>
-<footer>
-    <p>
-
-        &copy;Copyright 2022 Laurelstone Soaps Oregon City, Oregon 97045
-
-
-    </p>
-    <div class="contact_social">
-
-        <a href="http://www.facebook.com"><img class="social_media_img" src="images/facebook.png" alt="facebook_logo"></a>
-        <a href="http://www.instagram.com"><img class="social_media_img" src="images/instagram (1).png" alt="instagram_logo"></a>
-        <a href="http://www.youtube.com"><img class="social_media_img" src="images/youtube (1).png" alt="youtube_logo"></a>
-        <a href="http://www.twitter.com"><img class="social_media_img" src="images/twitter.png" alt="twitter_logo"></a>
-    </div>
-
-</footer>
 
 </html>

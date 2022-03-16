@@ -5,7 +5,7 @@ CS 125H
 Lab 9 */
 
 
-/* the styles for the elements */
+/* the reset selector */
 
 * {
     margin: 0;
@@ -16,101 +16,103 @@ Lab 9 */
     box-sizing: border-box;
 }
 
+
+/* the styles for the elements */
+
 html {
     background-color: whitesmoke;
 }
 
 body {
-    width: 100%;
+    width: 98%;
     max-width: 2000px;
     background-color: #ACB9B9;
     padding: 10px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 5px auto;
 }
 
 
 /*This is the header styles*/
 
-.header {
-    width: 99.8%;
+header {
+    display: flex;
+    flex-basis: 98%;
     height: auto;
     margin: 0 auto;
     padding-bottom: .5em;
-    float: left;
-    margin-top: .5em;
+    justify-content: center;
+    border: 10px solid whitesmoke;
+    border-top: none;
 }
 
-.header img {
-    width: 99.9%;
-    display: inline-block;
-    align-content: flex-start;
-    height: auto;
-}
-
-.soap_header {
-    width: 99.9%;
+header.soap_header {
+    display: flex;
+    flex-basis: 98%;
+    justify-content: space-around;
     height: auto;
     background-color: darkslategray;
-    border: 9.5px solid whitesmoke;
-    justify-content: center;
 }
 
-.soap_header h1 {
+header.soap_header h1 {
+    display: flex;
+    flex-basis: 98%;
+    justify-content: space-around;
     text-align: center;
     color: whitesmoke;
     font-size: 600%;
     font-family: monospace;
     font-weight: lighter;
     padding: 1%;
+    margin: 0 auto;
 }
 
 
-/*Style for the Nav IMG*/
+/*    Style for the Nav LOGO   */
 
-#logo img {
-    float: left;
+#nav_menu ul li#logo {
+    padding-top: 0;
     opacity: 80%;
-}
-
-#nav_menu a#logo {
     padding-top: 0em;
     margin-top: 0%;
 }
 
 
-/*Styles for the nav*/
+/*   Styles for the #nav_menu   */
 
 #nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
     list-style: none;
     text-decoration: none;
-    justify-content: center;
-    width: 99.8%;
+    justify-content: space-around;
+    width: 100%;
     margin: 0 auto;
-    overflow: hidden;
-    float: left;
-    margin-top: .5em;
     height: auto;
     padding-top: .5em;
     padding-bottom: .5em;
-    text-align: center;
-    margin-bottom: .5em;
     background-color: #829595;
     background-image: linear-gradient(darkslategray, #829595, darkslategray);
-    border-left: 9px solid whitesmoke;
-    border-right: 9px solid whitesmoke;
+    border-left: 10px solid whitesmoke;
+    border-right: 10px solid whitesmoke;
+    border-top: 10px solid whitesmoke;
+    border-bottom: none;
+}
+
+#nav_menu ul li {
+    flex-basis: 25%;
+    padding-top: 8%;
+    margin-right: 2.7%;
+    margin-left: 2.7%;
 }
 
 #nav_menu ul li a {
-    list-style: none;
+    display: block;
     text-decoration: none;
-    float: left;
+    text-align: center;
     color: whitesmoke;
     font-size: 200%;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-right: 2.7%;
-    margin-left: 2.7%;
-    padding-top: 5%;
 }
 
 #nav_menu a:hover,
@@ -126,15 +128,21 @@ body {
 }
 
 
-/*Styles for images index page*/
+/*Styles for images index.html page*/
+
+main {
+    display: flex;
+    flex-basis: 100%;
+}
 
 .images {
     border: 10px solid whitesmoke;
     padding: .4%;
     display: flex;
+    flex-basis: 100%;
     flex-direction: row;
     margin: 0 auto;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .rightimg {
@@ -159,7 +167,60 @@ body {
 }
 
 
-/* styles for the images on the soap page */
+/* The Process section/aside on index.html page*/
+
+section {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;
+    order: 2;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+section img {
+    padding: 6%;
+    padding-bottom: 1.2%;
+}
+
+aside {
+    display: flex;
+    flex-basis: 60%;
+    order: 1;
+    flex-direction: column;
+    padding: 1%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+aside img {
+    padding: 1%;
+}
+
+aside ol li {
+    width: 100%;
+    margin-top: 1em;
+    padding: 2%;
+    color: darkslategray;
+    text-align: left;
+}
+
+aside li {
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+aside h1 {
+    padding: .5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    color: darkslategray;
+}
+
+
+/*     styles for the images on the soap.html page      */
 
 .row {
     display: flex;
@@ -190,27 +251,22 @@ div.row>div.column {
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-
-/*  Just is case I want to add the background to light black
-background: rgb(0, 0, 0);
-background: rgba(0, 0, 0, 0.4);
-*/
-
 figcaption.addtocart {
     color: white;
     text-align: center;
     text-shadow: 2px 2px 4px darkslategrey;
     margin: 0 auto;
-    padding: auto;
 }
 
 
-/* the styles for the table */
+/* the styles for the table on the cart.html*/
 
 figure {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
     margin-top: 1em;
     margin-left: 0;
-    width: 50%;
     float: left;
 }
 
@@ -224,11 +280,14 @@ figcaption {
 }
 
 table {
-    width: 85%;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
     border-collapse: collapse;
     font-size: large;
     color: whitesmoke;
     margin-left: 3%;
+    padding: 1%;
 }
 
 th,
@@ -257,13 +316,13 @@ tr:nth-child(4) {
 }
 
 
-/*Artical Style*/
+/*   Artical on the cart.html page     */
 
-.article {
-    width: 50%;
-}
-
-aside {
+aside.artical {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-around;
     margin-top: 2em;
     width: 50%;
     float: left;
@@ -286,23 +345,39 @@ aside {
 }
 
 
-/* the styles for the form */
+/*        the styles for the form      */
 
-section {
+section.cart {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-around;
     width: 50%;
+    margin: 0 auto;
     float: right;
-    margin: .5 auto;
 }
 
-#soap {
-    margin-top: .90em;
-    margin-bottom: 1em;
+aside.artical {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 0 auto;
+}
+
+aside.artical h1 {
+    padding-top: 1em;
+}
+
+h1#soap {
+    padding-top: 1em;
     text-align: center;
     color: whitesmoke;
     font-size: 215%;
 }
 
 fieldset {
+    display: flex;
+    flex-direction: column;
     margin-bottom: .5em;
     padding: .5em 1%;
     color: whitesmoke;
@@ -326,13 +401,17 @@ select {
 }
 
 label {
+    display: flex;
     float: left;
+    flex-basis: 30%;
     width: 30%;
     text-align: right;
 }
 
 input,
 select {
+    display: flex;
+    flex-basis: 45%;
     width: 45%;
     margin-left: 2%;
     margin-bottom: 2%;
@@ -378,7 +457,7 @@ br {
 }
 
 
-/*Footer*/
+/*       Footer           */
 
 footer {
     border-style: solid;
@@ -406,9 +485,9 @@ footer p {
 }
 
 
-/* About Page */
+/*          About Page            */
 
-.images_about {
+section.images_about {
     float: left;
     display: block;
     width: 50%;
@@ -418,43 +497,49 @@ footer p {
 }
 
 aside.about {
-    width: 50%;
-    float: left;
+    flex-direction: column;
+    display: flex;
+    flex-basis: 50%;
     margin-top: 1em;
     padding-top: .5em;
     padding-left: 1%;
+    order: 1;
 }
 
-.about h1 {
+aside.about h1 {
     color: whitesmoke;
     font-size: 250%;
     padding-top: .3em;
     padding-bottom: .3em;
 }
 
-.about p {
+aside.about p {
     color: darkslategray;
     font-size: x-large;
     text-align: left;
     text-indent: 50px;
     padding: .70%;
+    order: 2;
 }
 
-.reviews {
-    width: 50%;
-    float: left;
+section.about {
+    flex-direction: column;
+    flex-basis: 50%;
+    display: flex;
     color: darkslategray;
     padding: 30px;
+    justify-content: center;
 }
 
-.reviews h1 {
+section.about h1 {
     color: whitesmoke;
     font-size: 250%;
     padding-bottom: .3em;
     text-align: center;
+    padding-top: 1em;
 }
 
-.reviews p {
+section.about p {
     text-indent: 50px;
     color: darkslategray;
     font-size: x-large;
@@ -463,64 +548,22 @@ aside.about {
 }
 
 
-/* The Process */
-
-div.fix_com {
-    width: 40%;
-    float: left;
-    margin-top: 1em;
-    display: block;
-}
-
-.fix_com img {
-    padding-left: 1%;
-    padding-right: 2%;
-    padding-top: 25px
-}
-
-div.instructions {
-    float: left;
-    width: 60%;
-    padding-left: 2.5%;
-}
-
-div.instructions img {
-    padding: 6%;
-    padding-bottom: 1.2%;
-}
-
-section.list {
-    margin-top: 1em;
-    width: 100%;
-    padding: 2%;
-    color: darkslategray;
-}
-
-.list h1 {
-    padding: 1%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 200%;
-}
-
-.list ol {
-    text-align: left;
-    padding: .5%;
-}
-
-.list li {
-    padding: .1%;
-    font-weight: bold;
-    font-size: x-large;
-}
-
-
 /*Contact US*/
 
-.contact_img {
-    float: left;
-    width: 50%;
+aside.contact_img {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
     padding: 4%;
+    margin: 0 auto;
+}
+
+section#contact {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
 
@@ -546,7 +589,17 @@ section.list {
     .centerimg {
         flex-wrap: wrap;
         align-items: center;
-        align-self: stretch;
+        justify-content: center;
+    }
+    header.soap_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav_menu img {
+        float: none;
+        flex-basis: 35%;
+        align-items: center;
     }
     #mobile_menu {
         display: block;
@@ -556,6 +609,11 @@ section.list {
     }
     .slicknav_menu {
         background-color: darkslategray !important;
+    }
+    nav.slicknav_nav {
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
     }
     /* mobile land to tab portrait */
 }
@@ -569,6 +627,11 @@ section.list {
     }
     .slicknav_menu {
         background-color: darkslategray !important;
+    }
+    header.soap_header {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
     }
     header,
     footer p {
@@ -588,5 +651,13 @@ section.list {
 @media only screen and (max-width: 479px) {
     body {
         font-size: 90%;
+    }
+    header.soap_header {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    header.soap_header h1 {
+        font-size: 250%;
     }
 }
